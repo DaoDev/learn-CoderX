@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">ca-einvoice</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Introduction</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Registration</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><b>Free Trial</b></a>
+
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div id="login">
+        <div id="form-sigin" class="col-md-3">
+            <p style="font-size: 150%;">Log-in</p>
+            <p>Don't have an account? <a href="#">Register now</a></p>
+            <hr>
+            <div class="social-buttons">
+                <a href="#" class="btn btn-fb"><i class="fa fa-usb"></i> USB Token</a>
+                <a href="#" class="btn btn-default bi bi-person"><i class="bi bi-person"></i> User Account</a>
+            </div>
+            <br>
+            <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                <div class="form-group">
+                    <ul class="nav nav-tabs">
+                        <li><a href="#home" data-toggle="tab">HOME<span class="glyphicon glyphicon-home"></span></a>
+                        </li>
+                        <li><a href="#info" data-toggle="tab">PROFILE<span class="glyphicon glyphicon-plus"></span></a>
+                        </li>
+                        <li><a href="#contact" data-toggle="tab">CONTACT <span
+                                    class="glyphicon glyphicon-pencil"></span></a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane" id="home">Trang Chủ</div>
+                        <div class="tab-pane" id="info">Thông Tin</div>
+                        <div class="tab-pane" id="contact">Liên Hệ</div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <p for="sr-only">Tax Number</p>
+                    <input type="text" class="form-control" id="TaxNumber" placeholder="E.g 0103930279 " required>
+                </div>
+                <div class="form-group">
+                    <p for="sr-only">Account</p>
+                    <input type="password" class="form-control" id="exampleInputPassword2"
+                        placeholder="E.g 1030-42141-4221" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Log-in</button>
+                </div>
+                <hr>
+                <p>Alternative Log-in</p>
+                <div class="SigningMobile">
+                    <a href="#" class="btn btn-default">Signing with Mobile Sign</a>
+                </div>
+                <hr>
+                <p>Need help? <a href="#">Contact us now</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- <div class="footer">
+        <footer >
+            <p>Product of NACENCOMM SMART CARD TECHNOLOGY.Copyright 2020 | A Member of Hanel Corporation</p>
+        </footer>
+    </div> -->
+    <script src="../js/jquery-3.1.1.min.js" type=text/javascript></script>
+    <script src="../js/bootstrap.min.js" type=text/javascript></script>
+    <script src="../js/custom.js" type=text/javascript></script>
+</body>
+
+</html>
